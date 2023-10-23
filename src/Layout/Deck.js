@@ -86,7 +86,7 @@ function Deck() {
         </div>
       </div>
       <h2>Cards</h2>
-      {deck.cards.map((card) => (
+      {deck.cards?.map((card) => (
         <div
           className="card float-center d-grid gap-2 d-md-block mt-2 mb-4"
           key={card.id}
