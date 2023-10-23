@@ -5,6 +5,10 @@ import NotFound from "./NotFound";
 import Home from "./Home";
 import Study from "./Study";
 import Deck from "./Deck";
+import CreateDeck from "./CreateDeck";
+import EditDeck from "./EditDeck";
+import AddCard from "./AddCard";
+import EditCard from "./EditCard";
 
 function Layout() {
   return (

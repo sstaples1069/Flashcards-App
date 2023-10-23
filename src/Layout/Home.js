@@ -1,8 +1,6 @@
-import React from "react";
+import { useState, useEffect} from "react";
 import { useHistory, Link } from "react-router-dom";
 import { listDecks, deleteDeck } from "../utils/api/index";
-import { useState } from "react";
-import { useEffect } from "react";
 
 function Home() {
     //initial value of decks stored as state
@@ -32,7 +30,7 @@ function Home() {
           </Link>
         </div>
         <div>
-          {decks?.map((deck)=>
+          {decks.map((deck)=>
             <div className="d-grid gap-2 d-md-block mt-2 mb-4" key={deck.id}> 
               <div className="card">
                 <div className="card-header bg-light">
