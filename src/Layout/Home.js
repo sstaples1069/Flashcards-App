@@ -19,9 +19,7 @@ function Home() {
 
     //delete button handler, use deckId
     function deleteButtonHandler(deckId) {
-        if (
-            window.confirm("Are you sure you want to delete this deck? It will be unrecoverable.")
-        ) {
+        if (window.confirm("Are you sure you want to delete this deck? It will be unrecoverable.")) {
             deleteDeck(deckId).then(history.go(0));
         }
     }

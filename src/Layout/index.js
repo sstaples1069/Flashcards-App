@@ -1,14 +1,30 @@
 import React from "react";
+import { Switch, Route } from "react-router-dom";
 import Header from "./Header";
 import NotFound from "./NotFound";
+import Home from "./Home";
+import Study from "./Study";
+import Deck from "./Deck";
 
 function Layout() {
   return (
     <>
       <Header />
       <div className="container">
-        {/* TODO: Implement the screen starting here */}
-        <NotFound />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/decks/:deckId">
+            <Deck />
+          </Route>
+          <Route exact path="/decks/:deckId/study">
+            <Study />
+          </Route>
+          <Route>
+            <NotFound />
+          </Route>
+        </Switch>
       </div>
     </>
   );
