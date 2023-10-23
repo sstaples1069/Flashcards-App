@@ -9,7 +9,7 @@ import "./App.css";
 
 // use bootstrap breadcrumb link in discord*****
 // DON NOT write fetch calls, use the functions from the API file in utils
-
+// site rendered at: https://flashcards-mw7a.onrender.com
 function App() {
   return (
     <div className="app-routes">
